@@ -1,7 +1,33 @@
+<template>
+  <div>
+    <h1 class="mb-8 text-4xl font-black text-white">Publications</h1>
+
+    <div class="tab-content-container"> <!-- Unique class for Publications tab content -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div v-for="(pub, i) in publications" :key="i" class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <span class="text-white">{{ i + 1 }}</span>
+          <span class="text-cyan-500">.</span>
+          {{ pub.cite }}
+
+          <a v-if="pub.pdf" :href="pub.pdf" target="_blank"> pdf </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script setup>
 const publications = [
   {
-    cite: "T. Phan, H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Three Distance Measurement Technologies for Flying Light Specks. 2023.",
+    cite: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, H. Culbertson. Towards Enabling Complex Touch-based Human-Drone Interaction. In Workshop on Human Multi-Robot Interaction, IROS 2023, Detroit, USA.',
+    pdf: '',
+  },
+  {
+    cite: 'H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Decentralized Group Formation Techniques for Flying Light Specks. In ACM Multimedia Asia, Taipei, Taiwan, December 6-8, 2023.',
+    pdf: '',
+  },
+  {
+    cite: "T. Phan, H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Three Distance Measurement Technologies for Flying Light Specks. In International Conference on Intelligent Metaverse Technologies and Applications (iMETA2023), Tartu, Estonia, September 18-20, 2023.",
     pdf: "https://arxiv.org/pdf/2308.10115.pdf",
   },
   {
@@ -26,19 +52,3 @@ const publications = [
   },
 ];
 </script>
-
-<template>
-  <div>
-    <h1 class="mb-8 text-4xl font-black text-white">Publications</h1>
-
-    <ol>
-      <li v-for="(pub, i) in publications" :key="i" class="mb-4">
-        <span class="text-white">{{ i + 1 }}</span>
-        <span class="text-cyan-500">.</span>
-        {{ pub.cite }}
-
-        <a v-if="pub.pdf" :href="pub.pdf" target="_blank"> pdf </a>
-      </li>
-    </ol>
-  </div>
-</template>

@@ -1,22 +1,16 @@
-<script setup>
-const technologies = [
-  "FLS-Matter and 3D Displays",
-  "Localization and Communication",
-  "Fault Tolerance",
-  "Limited Battery",
-];
-</script>
-
 <template>
   <div>
-    <h1 class="mb-8 text-4xl font-black text-white">Technology</h1>
-
-    <h3
-      v-for="(tech, i) in technologies"
-      :key="i"
-      class="mb-4 text-xl font-bold"
-    >
-      {{ tech }}
-    </h3>
+    <!-- Technology Tab Content -->
+    <div class="tab-content-container"> <!-- Unique class for Technology tab content -->
+      <div class="flex flex-col items-center mt-4 bg-gray-800 p-6 rounded-lg shadow-md">
+        <div class="text-3xl font-bold mb-4 text-white">Technology</div>
+        <div class="grid grid-cols-4 gap-4">
+          <div class="text-white text-xl text-center">FLS-Matter and 3D Displays</div>
+          <div class="text-white text-xl text-center">Localization and Communication</div>
+          <div class="text-white text-xl text-center">Fault Tolerance</div>
+          <div class="text-white text-xl text-center">Limited Battery</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
