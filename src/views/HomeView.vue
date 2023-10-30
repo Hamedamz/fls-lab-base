@@ -1,19 +1,39 @@
 <template>
-  <div class="tab-content-container">
+  <div class="tab-content-container flex flex-col items-center">
     <!-- Content specific to the Home tab -->
-    <!-- Mission Statement Bubble - Modified -->
-    <!-- <div class="flex justify-center items-center mt-4 bg-gray-800 p-6 rounded-lg shadow-md">
-      <div class="text-3xl font-bold mb-4 text-white">Our Mission</div>
-      <p class="text-center text-xl text-white">
-        For more than 70 years, Lawrence Livermore National Laboratory has applied science and technology (S&T) to make the world a safer place. While keeping our crucial mission-driven commitments in mind, we apply cutting-edge science and technology to achieve breakthroughs in nuclear deterrence, counterterrorism and nonproliferation, defense and intelligence, and energy and environmental security.
+    <div class="text-center text-white text-2xl mb-4">
+      <p class="mb-2">
+        Advances in computing, storage, communication, and robotics have enabled the vision of intelligent 3D multimedia systems.
       </p>
-    </div> -->
+      <p class="mb-2">
+        We investigate the design, implementation, applications, and social implications of these systems.
+      </p>
+      <p class="mb-2">
+        Applications are diverse ranging from healthcare to entertainment. They include haptic interactions.
+      </p>
+      <p class="mb-2">
+        Their data is multi-modal and rich with semantics.
+      </p>
+      <p class="mb-2">
+        We foresee the systems and their applications to revolutionize how we work, learn, play and entertain, receive medical care, and socialize.
+      </p>
+    </div>
+    <!-- Importing and displaying the image -->
+    <img :src="dataInfoKnowImage" alt="Data, Info, Know" class="w-1/2 h-auto mb-16">
   </div>
 </template>
 
 <script>
+// Importing the image
+import DataInfoKnowImage from "@/assets/images/Data,Info,Know.png";
+
 export default {
   name: "HomeView",
+  data() {
+    return {
+      dataInfoKnowImage: DataInfoKnowImage,
+    };
+  },
 };
 </script>
 

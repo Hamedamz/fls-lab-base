@@ -2,7 +2,7 @@
   <div>
     <h1 class="mb-8 text-4xl font-black text-white">Publications</h1>
 
-    <div class="tab-content-container"> <!-- Unique class for Publications tab content -->
+    <div class="tab-content-container">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div v-for="(pub, i) in publications" :key="i" class="bg-gray-800 p-6 rounded-lg shadow-md">
           <span class="text-white">{{ i + 1 }}</span>
@@ -10,6 +10,8 @@
           {{ pub.cite }}
 
           <a v-if="pub.pdf" :href="pub.pdf" target="_blank"> pdf </a>
+          <a v-if="i === 4" href="https://github.com/flyinglightspeck/FLSbagfile" target="_blank"> Source Code </a>
+          <a v-if="i === 5" href="https://github.com/flyinglightspeck/Motill" target="_blank"> Source Code </a>
         </div>
       </div>
     </div>
@@ -19,19 +21,19 @@
 <script setup>
 const publications = [
   {
-    cite: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, H. Culbertson. Towards Enabling Complex Touch-based Human-Drone Interaction. In Workshop on Human Multi-Robot Interaction, IROS 2023, Detroit, USA.',
+    cite: 'H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Decentralized Group Formation Techniques for Flying Light Specks. In ACM Multimedia Asia, Taipei, Taiwan, December 6-8, 2023.',
     pdf: '',
   },
   {
-    cite: 'H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Decentralized Group Formation Techniques for Flying Light Specks. In ACM Multimedia Asia, Taipei, Taiwan, December 6-8, 2023.',
-    pdf: '',
+    cite: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, H. Culbertson. Towards Enabling Complex Touch-based Human-Drone Interaction. In Workshop on Human Multi-Robot Interaction, IROS, October 1, 2023, Detroit, USA.',
+    pdf: 'https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5230/files/2023/09/79_SCR_23_Yang_Chen.pdf',
   },
   {
     cite: "T. Phan, H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Three Distance Measurement Technologies for Flying Light Specks. In International Conference on Intelligent Metaverse Technologies and Applications (iMETA2023), Tartu, Estonia, September 18-20, 2023.",
     pdf: "https://arxiv.org/pdf/2308.10115.pdf",
   },
   {
-    cite: "H. Alimohammadzadeh, R. Bernard, Y. Chen, T. Phan, P. Singh, S. Zhu, H. Culbertson, and S. Ghandeharizadeh. Dronevision: An Experimental 3D Testbed for Flying Light Specks. 2023.",
+    cite: "H. Alimohammadzadeh, R. Bernard, Y. Chen, T. Phan, P. Singh, S. Zhu, H. Culbertson, and S. Ghandeharizadeh. Dronevision: An Experimental 3D Testbed for Flying Light Specks. In arXiv 2308.10121, August 2023.",
     pdf: "https://arxiv.org/pdf/2308.10121.pdf",
   },
   {

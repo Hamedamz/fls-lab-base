@@ -9,18 +9,20 @@
         <RouterLink active-class="active-link" :to="{ name: 'home' }" class="text-white py-2 px-4 hover:bg-gray-700 rounded">Home</RouterLink>
         <RouterLink active-class="active-link" :to="{ name: 'technology' }" class="text-white py-2 px-4 hover:bg-gray-700 rounded">Technology</RouterLink>
         <RouterLink active-class="active-link" :to="{ name: 'personnel' }" class="text-white py-2 px-4 hover:bg-gray-700 rounded">Personnel</RouterLink>
-        <RouterLink active-class="active-link" :to="{ name: 'courses' }" class="text-white py-2 px-4 hover:bg-gray-700 rounded">Courses</RouterLink>
+        <RouterLink active-class="active-link" :to="{ name: 'courses' }" class="text-white py-2 px-4 hover:bg-gray-700 rounded">Announcements</RouterLink> <!-- Text changed to Announcements -->
         <RouterLink active-class="active-link" :to="{ name: 'publications' }" class="text-white py-2 px-4 hover:bg-gray-700 rounded">Publications</RouterLink>
       </nav>
     </header>
 
     <!-- FLS Lab Logo (larger, slightly below the header) -->
-    <div class="flex justify-center items-center pt-16 pb-8">
+    <div class="flex flex-col justify-center items-center pt-16 pb-8">
       <FLSTitle />
+      <!-- GitHub link added here, under the title -->
+      <a href="https://github.com/flyinglightspeck" target="_blank" class="text-white mt-2">GitHub</a>
     </div>
 
     <!-- Content Area - Home Tab -->
-    <div class="tab-content-container"> <!-- Unique class for Home tab content -->
+    <div class="tab-content-container">
       <router-view></router-view>
     </div>
   </div>
