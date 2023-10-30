@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="flex flex-col items-left">
     <h1 class="mb-8 text-4xl font-black text-white">Publications</h1>
 
-    <div class="tab-content-container">
+    <div class="tab-content-container w-full">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div v-for="(pub, i) in publications" :key="i" class="bg-gray-800 p-6 rounded-lg shadow-md">
           <span class="text-white">{{ i + 1 }}</span>
@@ -10,15 +10,26 @@
           {{ pub.cite }}
 
           <a v-if="pub.pdf" :href="pub.pdf" target="_blank"> pdf </a>
+          <a v-if="i === 0" href="https://github.com/flyinglightspeck/Group-Formation" target="_blank"> Source Code </a>
           <a v-if="i === 4" href="https://github.com/flyinglightspeck/FLSbagfile" target="_blank"> Source Code </a>
           <a v-if="i === 5" href="https://github.com/flyinglightspeck/Motill" target="_blank"> Source Code </a>
         </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer w-full">
+      <div class="text-center">
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2232382&HistoricalAwards=false" target="_blank" class="nsf-logo-link">
+          <img :src="NSFLogoImage" alt="NSF Logo" class="nsf-logo">
+        </a>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import NSFLogoImage from "@/assets/images/NSF_logo.png"; // Importing the NSF logo image
 const publications = [
   {
     cite: 'H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Decentralized Group Formation Techniques for Flying Light Specks. In ACM Multimedia Asia, Taipei, Taiwan, December 6-8, 2023.',
@@ -54,3 +65,25 @@ const publications = [
   },
 ];
 </script>
+
+<style scoped>
+.footer {
+  background-color: #2D3748;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.nsf-logo-link {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  outline: none !important;
+  border: none !important;
+}
+
+.nsf-logo {
+  width: 100%;
+  height: auto;
+}
+</style>

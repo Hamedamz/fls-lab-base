@@ -27,9 +27,8 @@
           3D displays using swarms of FLSs is a transformative idea that will pioneer a new era in multimedia systems.
           Immersive and interactive 3D displays will resemble futuristic systems from sci-fi movies and shows, e.g., Star Trek’s Holodeck.
         </p>
-        <img :src="HolodeckIMG" alt="Holodeck Image" class="mt-4 w-1/2 mx-auto"> <!-- Adjusted image size and centered it -->
+        <img :src="HolodeckIMG" alt="Holodeck Image" class="mt-4 w-1/2 mx-auto">
       </div>
-
 
       <!-- Localization and Communication Section -->
       <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-4">
@@ -75,18 +74,52 @@
           In the <a href="https://arxiv.org/pdf/2308.10121.pdf" class="underline text-white">Dronevision</a> paper, we present the design of a system with glass panes that protects its user from rogue FLSs. User safety is an important research topic that we will keep at the forefront of our investigations.
         </p>
       </div>
+
+      <!-- Footer -->
+      <div class="footer w-full">
+        <!-- NSF Logo at the bottom -->
+        <div class="text-center">
+          <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2232382&HistoricalAwards=false" target="_blank" class="nsf-logo-link">
+            <img :src="NSFLogoImage" alt="NSF Logo" class="nsf-logo">
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import HolodeckIMG from "@/assets/images/HolodeckIMG.png";
+import NSFLogoImage from "@/assets/images/NSF_logo.png";
 
 export default {
   data() {
     return {
-      HolodeckIMG
+      HolodeckIMG,
+      NSFLogoImage
     };
   }
 };
 </script>
+
+<style scoped>
+/* Add specific styles for the TechnologyView here if needed */
+.footer {
+  background-color: #2D3748;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.nsf-logo-link {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  outline: none !important;
+  border: none !important;
+}
+
+.nsf-logo {
+  width: 100%;
+  height: auto;
+}
+</style>
