@@ -92,7 +92,7 @@ const personnelGroups = [
     items: [
       {
         name: "Yang Chen",
-        email: "",
+        email: "chen716 at usc dot edu",
         photo: YangChen,
         bio: ""
       },
