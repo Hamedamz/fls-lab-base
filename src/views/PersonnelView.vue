@@ -7,7 +7,7 @@
           <h2 class="text-2xl font-bold mb-4 text-white">{{ group.title }}</h2>
           <div class="grid gap-4">
             <div v-for="person in group.items" :key="person.name" class="bg-gray-800 p-6 rounded-lg shadow-md relative">
-              <button v-if="person.name === 'Professor Shahram Ghandeharizadeh' || person.name === 'Professor Heather Culbertson'" @click="toggleBio(person)" class="absolute top-0 right-0 mt-2 mr-2 text-2xl text-white">+</button>
+              <button v-if="person.name === 'Shahram Ghandeharizadeh' || person.name === 'Heather Culbertson'" @click="toggleBio(person)" class="absolute top-0 right-0 mt-2 mr-2 text-2xl text-white">+</button>
               <img :src="person.photo" alt="Person" class="mx-auto w-32 h-32 rounded-full mb-4">
               <p class="text-center text-xl text-white">{{ person.name }}</p>
               <p class="text-center text-sm text-white text-gray-400">{{ person.email }}</p>
