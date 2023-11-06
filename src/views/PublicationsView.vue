@@ -4,15 +4,19 @@
 
     <div class="tab-content-container w-full">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div v-for="(pub, i) in publications" :key="i" class="bg-gray-800 p-6 rounded-lg shadow-md">
-          <span class="text-white">{{ i + 1 }}</span>
-          <span class="text-cyan-500">.</span>
-          {{ pub.cite }}
-
-          <a v-if="pub.pdf" :href="pub.pdf" target="_blank"> pdf </a>
-          <a v-if="i === 0" href="https://github.com/flyinglightspeck/Group-Formation" target="_blank"> Source Code </a>
-          <a v-if="i === 4" href="https://github.com/flyinglightspeck/FLSbagfile" target="_blank"> Source Code </a>
-          <a v-if="i === 5" href="https://github.com/flyinglightspeck/Motill" target="_blank"> Source Code </a>
+        <div v-for="(pub, i) in publications" :key="i" class="bg-gray-800 p-6 rounded-lg shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-baseline">
+              <span class="citation-number text-white mr-2">{{ i + 1 }}.</span>
+              <p class="citation-text">{{ pub.cite }}</p>
+            </div>
+          </div>
+          <div class="mt-4 flex justify-end">
+            <a v-if="pub.pdf" :href="pub.pdf" target="_blank" class="pdf-link mr-2">pdf</a>
+            <a v-if="i === 0" href="https://github.com/flyinglightspeck/Group-Formation" target="_blank" class="source-code-link">Source Code</a>
+            <a v-if="i === 4" href="https://github.com/flyinglightspeck/FLSbagfile" target="_blank" class="source-code-link">Source Code</a>
+            <a v-if="i === 5" href="https://github.com/flyinglightspeck/Motill" target="_blank" class="source-code-link">Source Code</a>
+          </div>
         </div>
       </div>
     </div>
@@ -85,5 +89,20 @@ const publications = [
 .nsf-logo {
   width: 100%;
   height: auto;
+}
+
+.citation-number {
+  font-weight: bold; /* Makes the number bold */
+}
+
+.citation-text {
+  color: white; /* This will make your citation text white */
+  margin: 0; /* Removes default paragraph margins */
+}
+
+.pdf-link, .source-code-link {
+  color: #63b3ed; /* Adjust the color as needed */
+  text-decoration: none; /* Removes underline from links */
+  margin-right: 10px; /* Adds spacing between links */
 }
 </style>

@@ -32,14 +32,14 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import HamedAlimohammadzadeh from "@/assets/images/HamedAlimohammadzadeh.jpg";
 import HeatherCulbertson from "@/assets/images/HeatherCulbertson.jpg";
+import NSFLogoImage from "@/assets/images/NSF_logo.png";
 import NimaYazdani from "@/assets/images/NimaYazdani.jpg";
 import ShahramGhandeharizadeh from "@/assets/images/ShahramGhandeharizadeh.jpg";
 import ShuqinZhu from "@/assets/images/ShuqinZhu.jpg";
 import YangChen from "@/assets/images/YangChen.jpg";
-import NSFLogoImage from "@/assets/images/NSF_logo.png";
+import { ref } from 'vue';
 
 const personnelGroups = ref([
   {
