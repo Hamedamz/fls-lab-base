@@ -47,35 +47,7 @@ const publications = [
   citeAfterLink: ', December 15, 2023. (arXiv 2308.10121, August 2023.)',
   pdf: 'https://arxiv.org/pdf/2308.10121.pdf',
 },
-  {
-    citeBeforeLink: 'H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Decentralized Group Formation Techniques for Flying Light Specks. In ACM Multimedia Asia, Taipei, Taiwan, December 6-8, 2023.',
-    pdf: '',
-  },
-  {
-    citeBeforeLink: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, H. Culbertson. Towards Enabling Complex Touch-based Human-Drone Interaction. In Workshop on Human Multi-Robot Interaction, IROS, October 1, 2023, Detroit, USA.',
-    pdf: 'https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5230/files/2023/09/79_SCR_23_Yang_Chen.pdf',
-  },
-  {
-    citeBeforeLink: "T. Phan, H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Three Distance Measurement Technologies for Flying Light Specks. In International Conference on Intelligent Metaverse Technologies and Applications (iMETA2023), Tartu, Estonia, September 18-20, 2023.",
-    pdf: "https://arxiv.org/pdf/2308.10115.pdf",
-  },
-  {
-    citeBeforeLink: "H. Alimohammadzadeh, D. Mehraban, and S. Ghandeharizadeh. Modeling Illumination Data with Flying Light Specks. In Proceedings of the 14th Conference on ACM Multimedia Systems, Vancouver, Canada, June 2023.",
-    pdf: "https://dl.acm.org/doi/pdf/10.1145/3587819.3592544",
-  },
-  {
-    citeBeforeLink: "S. Ghandeharizadeh. Display of 3D Illuminations using Flying Light Specks. In ACM Multimedia, Lisbon, Portugal, October 2022.",
-    pdf: "https://arxiv.org/pdf/2207.08346.pdf",
-  },
-  {
-    citeBeforeLink: "S. Ghandeharizadeh and L. Garcia. Safety in the Emerging Holodeck Applications. In CHI 2022 Workshop on Novel Challenges of Safety, Security and Privacy in Extended Reality, April 25, 2022.",
-    pdf: "https://arxiv.org/pdf/2208.08398.pdf",
-  },
-  {
-    citeBeforeLink: "S. Ghandeharizadeh. Holodeck: Immersive 3D Displays Using Swarms of Flying Light Specks. In ACM Multimedia Asia, Gold Coast, Australia, December 1-3, 2021.",
-    pdf: "https://arxiv.org/pdf/2111.03657.pdf",
-  },
-  {
+{
     citeBeforeLink: 'S. Ghandeharizadeh and V. Oria. Virtual Reality, Augmented Reality, Mixed Reality, Holograms and Holodecks. In ',
     conferenceLink: 'http://www.holodecks.quest',
     conferenceTitle: 'the First International Conference on Holodecks',
@@ -111,6 +83,35 @@ const publications = [
   pdf: '',
   sourceCode: ''
 },
+  {
+    citeBeforeLink: 'H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Decentralized Group Formation Techniques for Flying Light Specks. In ACM Multimedia Asia, Taipei, Taiwan, December 6-8, 2023.',
+    pdf: '',
+  },
+  {
+    citeBeforeLink: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, H. Culbertson. Towards Enabling Complex Touch-based Human-Drone Interaction. In Workshop on Human Multi-Robot Interaction, IROS, October 1, 2023, Detroit, USA.',
+    pdf: 'https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5230/files/2023/09/79_SCR_23_Yang_Chen.pdf',
+  },
+  {
+    citeBeforeLink: "T. Phan, H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Three Distance Measurement Technologies for Flying Light Specks. In International Conference on Intelligent Metaverse Technologies and Applications (iMETA2023), Tartu, Estonia, September 18-20, 2023.",
+    pdf: "https://arxiv.org/pdf/2308.10115.pdf",
+  },
+  {
+    citeBeforeLink: "H. Alimohammadzadeh, D. Mehraban, and S. Ghandeharizadeh. Modeling Illumination Data with Flying Light Specks. In Proceedings of the 14th Conference on ACM Multimedia Systems, Vancouver, Canada, June 2023.",
+    pdf: "https://dl.acm.org/doi/pdf/10.1145/3587819.3592544",
+  },
+  {
+    citeBeforeLink: "S. Ghandeharizadeh. Display of 3D Illuminations using Flying Light Specks. In ACM Multimedia, Lisbon, Portugal, October 2022.",
+    pdf: "https://arxiv.org/pdf/2207.08346.pdf",
+  },
+  {
+    citeBeforeLink: "S. Ghandeharizadeh and L. Garcia. Safety in the Emerging Holodeck Applications. In CHI 2022 Workshop on Novel Challenges of Safety, Security and Privacy in Extended Reality, April 25, 2022.",
+    pdf: "https://arxiv.org/pdf/2208.08398.pdf",
+  },
+  {
+    citeBeforeLink: "S. Ghandeharizadeh. Holodeck: Immersive 3D Displays Using Swarms of Flying Light Specks. In ACM Multimedia Asia, Gold Coast, Australia, December 1-3, 2021.",
+    pdf: "https://arxiv.org/pdf/2111.03657.pdf",
+  },
+  
 
 ];
 </script>
