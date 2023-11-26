@@ -43,7 +43,7 @@ const publications = [
   citeBeforeLink: 'H. Alimohammadzadeh, R. Bernard, Y. Chen, T. Phan, P. Singh, S. Zhu, H. Culbertson, and S. Ghandeharizadeh. Dronevision: An Experimental 3D Testbed for Flying Light Specks. In ',
   conferenceLink: 'http://www.holodecks.quest',
   conferenceTitle: 'the First International Conference on Holodecks',
-  location: 'Los Angeles, USA',
+  location: ', Los Angeles, USA',
   citeAfterLink: ', December 15, 2023. (arXiv 2308.10121, August 2023.)',
   pdf: 'https://arxiv.org/pdf/2308.10121.pdf',
 },
@@ -51,7 +51,7 @@ const publications = [
     citeBeforeLink: 'S. Ghandeharizadeh and V. Oria. Virtual Reality, Augmented Reality, Mixed Reality, Holograms and Holodecks. In ',
     conferenceLink: 'http://www.holodecks.quest',
     conferenceTitle: 'the First International Conference on Holodecks',
-    location: 'Los Angeles, USA',
+    location: ', Los Angeles, USA',
     citeAfterLink: ', December 15, 2023.',
     pdf: '',
     sourceCode: ''
@@ -60,7 +60,7 @@ const publications = [
     citeBeforeLink: 'H. Alimohammadzadeh and S. Ghandeharizadeh. SwarMer: A Decentralized Localization Framework for Flying Light Specks. In ',
     conferenceLink: 'http://www.holodecks.quest',
     conferenceTitle: 'the First International Conference on Holodecks',
-    location: 'Los Angeles, USA',
+    location: ', Los Angeles, USA',
     citeAfterLink: ', December 15, 2023.',
     pdf: '',
     sourceCode: ''
@@ -78,7 +78,7 @@ const publications = [
   citeBeforeLink: 'N. Yazdani, H. Alimohammadzadeh, and S. Ghandeharizadeh. A Conceptual Model of Intelligent Multimedia Data Rendered using Flying Light Specks (Invited Paper). In ',
   conferenceLink: 'http://www.holodecks.quest',
   conferenceTitle: 'the First International Conference on Holodecks',
-  location: 'Los Angeles, USA',
+  location: ', Los Angeles, USA',
   citeAfterLink: ', December 15, 2023.',
   pdf: '',
   sourceCode: ''
