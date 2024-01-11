@@ -27,16 +27,16 @@ import NSFLogoImage from "@/assets/images/NSF_logo.png";
 
 const announcements = [
   {
-    content: 'We are organizing the First International Conference on Holodecks, visit <a href="http://www.holodecks.quest" target="_blank" class="underline">www.holodecks.quest</a> for details. Paper submission deadline is Nov 10, 2023.'
+    content: 'Our paper reporting on user interactions with a Crazyflie has been accepted to appear at the <a href="https://2024.hapticssymposium.org/" target="_blank" class="underline">IEEE Haptics Symposium 2024</a>.'
   },
   {
-    content: 'In Spring 2024, we are introducing a graduate seminar entitled <a href="https://web-app.usc.edu/soc/syllabus/20241/30010.pdf" target="_blank" class="underline">Introduction to Holodecks</a>.'
+    content: 'The First International Conference on Holodecks was a huge success with 6 keynote speakers, 8 regular paper presentations, and more than 100 registrants. '
   },
   {
-    content: 'Our paper on group formation has been accepted to appear at the ACM Multimedia Asia, December 2023.'
+    content: 'We are organizing the Second International Conference on Holodecks to take place later in 2024.'
   },
   {
-    content: 'Source code available at <a href="https://github.com/flyinglightspeck" target="_blank" class="underline">GitHub</a>'
+    content: 'All source code is available at <a href="https://github.com/flyinglightspeck" target="_blank" class="underline">GitHub</a>.'
   }
 ];
 </script>

@@ -21,7 +21,9 @@
           It is the building block of objects with behavior. Example objects include a rock, water, a teapot, a sword, etc.
           The behavior associated with an object is inherited by its FLS-matters.
           This behavior may further be specialized at the granularity of each FLS-matter.
-          For additional details, see Section 4 of the <a href="https://dl.acm.org/doi/10.1145/3469877.3493698" class="underline text-white">Holodecks</a> paper.
+          For additional details, see Section 4 of the 
+          <a href="https://dl.acm.org/doi/10.1145/3469877.3493698" target="_blank" class="underline">Holodecks</a> paper and the 
+          <a href="https://youtu.be/5vvzaATa0lg" target="_blank" class="underline">Video</a> of our paper on user interactions with a Crazyflie.
         </p>
         <p class="text-white text-xl mt-4">
           3D displays using swarms of FLSs is a transformative idea that will pioneer a new era in multimedia systems.

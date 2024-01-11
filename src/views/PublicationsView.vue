@@ -10,7 +10,7 @@
               <span class="citation-number text-white mr-2">{{ i + 1 }}.</span>
               <p class="citation-text">
                 {{ pub.citeBeforeLink }}
-                <a :href="pub.conferenceLink" target="_blank" class="conference-link">
+                <a v-if="pub.conferenceLink" :href="pub.conferenceLink" target="_blank" class="conference-link">
                   {{ pub.conferenceTitle }}
                 </a>
                 {{ pub.location }}{{ pub.citeAfterLink }}
@@ -19,7 +19,7 @@
           </div>
           <div class="mt-4 flex justify-end">
             <a v-if="pub.pdf" :href="pub.pdf" target="_blank" class="pdf-link mr-2">pdf</a>
-            <!-- Include source code links if any -->
+            <a v-if="pub.videoLink" :href="pub.videoLink" target="_blank" class="video-link">{{ pub.videoText }}</a>
           </div>
         </div>
       </div>
@@ -39,6 +39,12 @@
 <script setup>
 import NSFLogoImage from "@/assets/images/NSF_logo.png";
 const publications = [
+
+{
+  citeBeforeLink: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, and H. Culbertson. Force-Feedback Through Touch-based Interactions With a Nanocopter. In IEEE Haptics Symposium, Long Beach, CA, April 7-10, 2024. ',
+  videoLink: 'https://youtu.be/5vvzaATa0lg',
+  videoText: 'Video',
+},
 {
   citeBeforeLink: 'H. Alimohammadzadeh, R. Bernard, Y. Chen, T. Phan, P. Singh, S. Zhu, H. Culbertson, and S. Ghandeharizadeh. Dronevision: An Experimental 3D Testbed for Flying Light Specks. In ',
   conferenceLink: 'http://www.holodecks.quest',
