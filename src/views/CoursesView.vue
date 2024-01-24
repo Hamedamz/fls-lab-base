@@ -27,7 +27,7 @@ import NSFLogoImage from "@/assets/images/NSF_logo.png";
 
 const announcements = [
   {
-    content: 'Our paper reporting on user interactions with a Crazyflie has been accepted to appear at the <a href="https://2024.hapticssymposium.org/" target="_blank" class="underline">IEEE Haptics Symposium 2024</a>.'
+    content: 'Two papers have been accepted for publication.  One reporting user interactions with a Crazyflie.  And, a second describing the use of standby FLSs to enhance the quality of an illumination.   See the Publications tab for details.'
   },
   {
     content: 'The First International Conference on Holodecks was a huge success with 6 keynote speakers, 8 regular paper presentations, and more than 100 registrants. '

@@ -39,7 +39,13 @@
 <script setup>
 import NSFLogoImage from "@/assets/images/NSF_logo.png";
 const publications = [
-
+{
+  citeBeforeLink: 'H. Alimohammadzadeh, S. Zhu, J. Bai and S. Ghandeharizadeh. Reliability Groups with Standby Flying Light Specks. In ACM MMSys, Bari, Italy, April 15-18, 2024.',
+  conferenceTitle: '',
+  location: '',
+  citeAfterLink: '',
+  pdf: '',
+},
 {
   citeBeforeLink: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, and H. Culbertson. Force-Feedback Through Touch-based Interactions With a Nanocopter. In IEEE Haptics Symposium, Long Beach, CA, April 7-10, 2024. ',
   videoLink: 'https://youtu.be/5vvzaATa0lg',
