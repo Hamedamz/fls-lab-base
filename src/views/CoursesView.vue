@@ -27,13 +27,13 @@ import NSFLogoImage from "@/assets/images/NSF_logo.png";
 
 const announcements = [
   {
+    content: 'The <a href="https://www.holodecks.quest"> Second International Conference on Holodecks</a> will take place on December 19,2024.'
+  },
+  {
     content: 'Two papers have been accepted for publication.  One reporting user interactions with a Crazyflie.  And, a second describing the use of standby FLSs to enhance the quality of an illumination.   See the Publications tab for details.'
   },
   {
     content: 'The First International Conference on Holodecks was a huge success with 6 keynote speakers, 8 regular paper presentations, and more than 100 registrants. '
-  },
-  {
-    content: 'We are organizing the Second International Conference on Holodecks to take place later in 2024.'
   },
   {
     content: 'All source code is available at <a href="https://github.com/flyinglightspeck" target="_blank" class="underline">GitHub</a>.'
