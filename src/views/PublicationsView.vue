@@ -40,11 +40,18 @@
 import NSFLogoImage from "@/assets/images/NSF_logo.png";
 const publications = [
 {
-  citeBeforeLink: 'H. Alimohammadzadeh, S. Zhu, J. Bai and S. Ghandeharizadeh. Reliability Groups with Standby Flying Light Specks. In ACM MMSys, Bari, Italy, April 15-18, 2024.',
+  citeBeforeLink: 'H. Alimohammadzadeh and S. Ghandeharizadeh. Swarical: An Integrated Hierarchical Approach to Localizing Flying Light Specks. In ACM Multimedia, Melbourne, Australia, October 2024.',
   conferenceTitle: '',
   location: '',
   citeAfterLink: '',
   pdf: '',
+},
+{
+  citeBeforeLink: 'H. Alimohammadzadeh, S. Zhu, J. Bai and S. Ghandeharizadeh. Reliability Groups with Standby Flying Light Specks. In ACM MMSys, Bari, Italy, April 15-18, 2024.',
+  conferenceTitle: '',
+  location: '',
+  citeAfterLink: '',
+  pdf: 'https://dl.acm.org/doi/pdf/10.1145/3625468.3647606',
 },
 {
   citeBeforeLink: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, and H. Culbertson. Force-Feedback Through Touch-based Interactions With a Nanocopter. In IEEE Haptics Symposium, Long Beach, CA, April 7-10, 2024. ',

@@ -30,7 +30,7 @@ const announcements = [
     content: 'The <a href="https://www.holodecks.quest" target="_blank" class="underline"> Second International Conference on Holodecks</a> will take place on December 19, 2024.'
   },
   {
-    content: 'Two papers have been accepted for publication.  One reporting user interactions with a Crazyflie.  And, a second describing the use of standby FLSs to enhance the quality of an illumination.   See the Publications tab for details.'
+    content: 'A paper describing Swarical has been accepted to appear at the ACM Multimedia 2024.  Swarical is a fast and highly accurate localization technique for FLSs.'
   },
   {
     content: 'The First International Conference on Holodecks was a huge success with 6 keynote speakers, 8 regular paper presentations, and more than 100 registrants. '
