@@ -33,6 +33,9 @@ const announcements = [
     content: 'A paper describing Swarical has been accepted to appear at the ACM Multimedia 2024.  Swarical is a fast and highly accurate localization technique for FLSs.'
   },
   {
+    content: 'NSF has made a second award in support of our efforts.  This time for Dronevision, a physics-based environment using FLSs.'
+  },
+  {
     content: 'The First International Conference on Holodecks was a huge success with 6 keynote speakers, 8 regular paper presentations, and more than 100 registrants. '
   },
   {
