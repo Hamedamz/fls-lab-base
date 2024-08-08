@@ -72,7 +72,7 @@ const publications = [
     conferenceTitle: 'the First International Conference on Holodecks',
     location: ', Los Angeles, USA',
     citeAfterLink: ', December 15, 2023.',
-    pdf: '',
+    pdf: 'https://urldefense.com/v3/__https://www.holodecks.quest/_files/ugd/fb2888_2ab188133a214c3287ed8be3cc71ae6f.pdf?index=true__;!!LIr3w8kk_Xxm!vROpUlRfPc7mWWv-phZt38Pwb-Vba5Nk-l2ZdQ6a-afV3DPw72lMXyTFxit2mxoK6q1wsJr-FHqeojOQ$',
     sourceCode: ''
   },
   {
@@ -81,7 +81,7 @@ const publications = [
     conferenceTitle: 'the First International Conference on Holodecks',
     location: ', Los Angeles, USA',
     citeAfterLink: ', December 15, 2023.',
-    pdf: '',
+    pdf: 'https://urldefense.com/v3/__https://www.holodecks.quest/_files/ugd/fb2888_f3e51e31182f4cd9b61204547b6b89f3.pdf?index=true__;!!LIr3w8kk_Xxm!vROpUlRfPc7mWWv-phZt38Pwb-Vba5Nk-l2ZdQ6a-afV3DPw72lMXyTFxit2mxoK6q1wsJr-FOSnimgW$',
     sourceCode: ''
   },
 {
@@ -90,7 +90,7 @@ const publications = [
   conferenceTitle: 'the First International Conference on Holodecks',
   location: ', Los Angeles, USA',
   citeAfterLink: ', December 15, 2023.',
-  pdf: '',
+  pdf: 'https://urldefense.com/v3/__https://www.holodecks.quest/_files/ugd/fb2888_3e3f436ac55a443db18d89604f7f369b.pdf?index=true__;!!LIr3w8kk_Xxm!vROpUlRfPc7mWWv-phZt38Pwb-Vba5Nk-l2ZdQ6a-afV3DPw72lMXyTFxit2mxoK6q1wsJr-FBKTp2F9$',
   sourceCode: ''
 },
 {
@@ -99,12 +99,12 @@ const publications = [
   conferenceTitle: 'the First International Conference on Holodecks',
   location: ', Los Angeles, USA',
   citeAfterLink: ', December 15, 2023.',
-  pdf: '',
+  pdf: 'https://urldefense.com/v3/__https://www.holodecks.quest/_files/ugd/fb2888_4cf85d8951b241d1a86a378af2144cdb.pdf?index=true__;!!LIr3w8kk_Xxm!vROpUlRfPc7mWWv-phZt38Pwb-Vba5Nk-l2ZdQ6a-afV3DPw72lMXyTFxit2mxoK6q1wsJr-FLm-veSV$',
   sourceCode: ''
 },
   {
     citeBeforeLink: 'H. Alimohammadzadeh, H. Culbertson, and S. Ghandeharizadeh. An Evaluation of Decentralized Group Formation Techniques for Flying Light Specks. In ACM Multimedia Asia, Taipei, Taiwan, December 6-8, 2023.',
-    pdf: '',
+    pdf: 'https://urldefense.com/v3/__https://dl.acm.org/doi/pdf/10.1145/3595916.3626460__;!!LIr3w8kk_Xxm!vROpUlRfPc7mWWv-phZt38Pwb-Vba5Nk-l2ZdQ6a-afV3DPw72lMXyTFxit2mxoK6q1wsJr-FAPuISni$',
   },
   {
     citeBeforeLink: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, H. Culbertson. Towards Enabling Complex Touch-based Human-Drone Interaction. In Workshop on Human Multi-Robot Interaction, IROS, October 1, 2023, Detroit, USA.',
