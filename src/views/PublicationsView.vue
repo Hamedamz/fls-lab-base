@@ -75,6 +75,17 @@ const publications = [
     pdf: 'https://urldefense.com/v3/__https://www.holodecks.quest/_files/ugd/fb2888_2ab188133a214c3287ed8be3cc71ae6f.pdf?index=true__;!!LIr3w8kk_Xxm!vROpUlRfPc7mWWv-phZt38Pwb-Vba5Nk-l2ZdQ6a-afV3DPw72lMXyTFxit2mxoK6q1wsJr-FHqeojOQ$',
     sourceCode: ''
   },
+
+  {
+    citeBeforeLink: 'Yang Chen; Hamed Alimohammadzadeh; Shahram Ghandeharizadeh; Heather Culbertson. Towards a Stable 3D Physical Human-Drone Interaction. In ',
+    conferenceLink: 'https://www.holodecks.quest/agenda-2023',
+    conferenceTitle: 'the First International Conference on Holodecks',
+    location: ', Los Angeles, USA',
+    citeAfterLink: ', December 15, 2023.',
+    pdf: 'https://urldefense.com/v3/__https://www.holodecks.quest/_files/ugd/fb2888_25a58674ba6c49bea8e53b76bb7a106d.pdf?index=true__;!!LIr3w8kk_Xxm!vgCwBBL0JOp6tzDK2oc1x19Iof3hBakz20M22Yo_e4h5QvprwATjWvj6ThE7tW50SBCmVtozFP9bCmEI$',
+    sourceCode: ''
+  },
+
   {
     citeBeforeLink: 'H. Alimohammadzadeh and S. Ghandeharizadeh. SwarMer: A Decentralized Localization Framework for Flying Light Specks. In ',
     conferenceLink: 'https://www.holodecks.quest/agenda-2023',
