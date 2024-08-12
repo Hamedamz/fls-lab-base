@@ -23,7 +23,7 @@
     <div class="footer w-full">
       <!-- NSF Logo at the bottom -->
       <div class="text-center">
-        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2232382&HistoricalAwards=false" target="_blank" class="nsf-logo-link">
+        <a href="https://urldefense.com/v3/__https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425754&HistoricalAwards=false__;!!LIr3w8kk_Xxm!rBmrWhQdSpF4Abq7sdxr1i6DrvsTB3WgkYk6D6W7o4csESD-1lkX-mk8csyu-v2EY9JAG5mTc9mFUT7h$" target="_blank" class="nsf-logo-link">
           <img :src="NSFLogoImage" alt="NSF Logo" class="nsf-logo">
         </a>
       </div>
