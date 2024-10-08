@@ -114,8 +114,8 @@ const personnelGroups = ref([
         showBio: false,
       },
       {
-        name: "Xyanyu Pan",
-        email: "Xyanyupa at usc dot edu",
+        name: "Xuanyu Pan",
+        email: "Xuanyupa at usc dot edu",
         photo: XuanyuPan,
         bio: "",
         showBio: false,
