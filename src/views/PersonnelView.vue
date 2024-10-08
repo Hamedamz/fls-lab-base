@@ -97,18 +97,6 @@ const personnelGroups = ref([
     ],
   },
   {
-    title: "Affiliated Ph.D. Students",
-    items: [
-      {
-        name: "Yang Chen",
-        email: "chen716 at usc dot edu",
-        photo: YangChen,
-        bio: "",
-        showBio: false,
-      },
-    ],
-  },
-  {
     title: "Undergraduate Students",
     items: [
       {
@@ -140,7 +128,19 @@ const personnelGroups = ref([
         showBio: false,
       },
     ],
-  }
+  },
+  {
+    title: "Affiliated Ph.D. Students",
+    items: [
+      {
+        name: "Yang Chen",
+        email: "chen716 at usc dot edu",
+        photo: YangChen,
+        bio: "",
+        showBio: false,
+      },
+    ],
+  },
 ]);
 
 function toggleBio(person) {
