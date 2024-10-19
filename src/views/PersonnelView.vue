@@ -133,7 +133,7 @@ const personnelGroups = ref([
         photo: george,
         bio: "",
         showBio: false,
-      },
+      }
     ],
   },
 
