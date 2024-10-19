@@ -123,7 +123,7 @@ const personnelGroups = ref([
       {
         name: "George Scholefield",
         email: "gscholef at usc dot edu",
-        photo: George_Scholefield,
+        photo: GeorgeScholefield,
         bio: "",
         showBio: false,
       },
