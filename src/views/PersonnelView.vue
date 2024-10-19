@@ -127,13 +127,6 @@ const personnelGroups = ref([
         bio: "",
         showBio: false,
       },
-      {
-        name: "George Scholefield",
-        email: "gscholef at usc dot edu",
-        photo: George_Scholefield,
-        bio: "",
-        showBio: false,
-      }
     ],
   },
 
