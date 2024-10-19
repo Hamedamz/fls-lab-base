@@ -43,6 +43,9 @@ import ShuqinZhu from "@/assets/images/ShuqinZhu.jpg";
 import WallaceBrowning from "@/assets/images/WallaceBrowning.jpg";
 import XuanyuPan from "@/assets/images/Xuanyu_Pan.jpg";
 import YangChen from "@/assets/images/YangChen.jpg";
+import GeorgeScholefield from "@/assets/images/GeorgeScholefield.jpg";
+
+
 import { ref } from 'vue';
 
 const personnelGroups = ref([
@@ -120,13 +123,13 @@ const personnelGroups = ref([
         bio: "",
         showBio: false,
       },
-      // {
-      //   name: "George Scholefield",
-      //   email: "gscholef at usc dot edu",
-      //   photo: GeorgeScholefield,
-      //   bio: "",
-      //   showBio: false,
-      // },
+      {
+        name: "George Scholefield",
+        email: "gscholef at usc dot edu",
+        photo: GeorgeScholefield,
+        bio: "",
+        showBio: false,
+      },
       {
         name: "Kariena Panpaliya",
         email: "kpanpali at usc dot edu",
