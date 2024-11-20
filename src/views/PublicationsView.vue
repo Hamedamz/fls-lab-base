@@ -44,7 +44,7 @@ const publications = [
   conferenceTitle: '',
   location: '',
   citeAfterLink: '',
-  pdf: '',
+  pdf: 'https://dl.acm.org/doi/10.1145/3664647.3681080',
 },
 {
   citeBeforeLink: 'H. Alimohammadzadeh, S. Zhu, J. Bai and S. Ghandeharizadeh. Reliability Groups with Standby Flying Light Specks. In ACM MMSys, Bari, Italy, April 15-18, 2024.',
@@ -57,6 +57,7 @@ const publications = [
   citeBeforeLink: 'Y. Chen, H. Alimohammadzadeh, S. Ghandeharizadeh, and H. Culbertson. Force-Feedback Through Touch-based Interactions With a Nanocopter. In IEEE Haptics Symposium, Long Beach, CA, April 7-10, 2024. ',
   videoLink: 'https://youtu.be/5vvzaATa0lg',
   videoText: 'Video',
+  pdf: 'https://ieeexplore.ieee.org/document/10520851'
 },
 {
   citeBeforeLink: 'H. Alimohammadzadeh, R. Bernard, Y. Chen, T. Phan, P. Singh, S. Zhu, H. Culbertson, and S. Ghandeharizadeh. Dronevision: An Experimental 3D Testbed for Flying Light Specks. In ',

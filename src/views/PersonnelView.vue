@@ -32,6 +32,7 @@
 </template>
 
 <script setup>
+import GeorgeScholefield from "@/assets/images/GeorgeScholefield.jpg";
 import HamedAlimohammadzadeh from "@/assets/images/HamedAlimohammadzadeh.jpg";
 import HeatherCulbertson from "@/assets/images/HeatherCulbertson.jpg";
 import JasmineCarrion from "@/assets/images/Jasmine_Carrion.jpg";
@@ -43,7 +44,6 @@ import ShuqinZhu from "@/assets/images/ShuqinZhu.jpg";
 import WallaceBrowning from "@/assets/images/WallaceBrowning.jpg";
 import XuanyuPan from "@/assets/images/Xuanyu_Pan.jpg";
 import YangChen from "@/assets/images/YangChen.jpg";
-import GeorgeScholefield from "@/assets/images/GeorgeScholefield.jpg";
 
 
 import { ref } from 'vue';
