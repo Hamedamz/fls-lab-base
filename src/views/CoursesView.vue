@@ -27,10 +27,10 @@ import NSFLogoImage from "@/assets/images/NSF_logo.png";
 
 const announcements = [
   {
-    content: 'The <a href="https://www.holodecks.quest" target="_blank" class="underline"> Second International Conference on Holodecks</a> will take place on December 19, 2024.'
+    content: '<a href="https://www.holodecks.quest" target="_blank" class="underline"> The Third International Conference on Holodecks</a> will take place on Jan. 8, 2026.'
   },
   {
-    content: 'A paper describing Swarical has been accepted to appear at the ACM Multimedia 2024.  Swarical is a fast and highly accurate localization technique for FLSs.'
+    content: '<a href=" https://www.holodecks.quest/agenda-2024" target="_blank" class="underline"> The Second International Conference on Holodecks</a> was held on December 19, 2024.'
   },
   {
     content: 'NSF has made a second award in support of our efforts.  This time for Dronevision, a physics-based environment using FLSs.'
