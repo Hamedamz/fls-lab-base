@@ -27,10 +27,10 @@ import NSFLogoImage from "@/assets/images/NSF_logo.png";
 
 const announcements = [
   {
-    content: '<a href="https://www.holodecks.quest" target="_blank" class="underline"> The Third International Conference on Holodecks</a> will take place on Jan. 8, 2026.'
+    content: '<a href="https://www.holodecks.quest" target="_blank" class="underline">The Third International Conference on Holodecks</a> will take place on Jan. 8, 2026.'
   },
   {
-    content: '<a href=" https://www.holodecks.quest/agenda-2024" target="_blank" class="underline"> The Second International Conference on Holodecks</a> was held on December 19, 2024.'
+    content: '<a href=" https://www.holodecks.quest/agenda-2024" target="_blank" class="underline">The Second International Conference on Holodecks</a> was held on December 19, 2024.'
   },
   {
     content: 'NSF has made a second award in support of our efforts.  This time for Dronevision, a physics-based environment using FLSs.'
