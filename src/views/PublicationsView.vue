@@ -40,6 +40,24 @@
 import NSFLogoImage from "@/assets/images/NSF_logo.png";
 const publications = [
 {
+  citeBeforeLink: 'H. Alimohammadzadeh and S. Ghandeharizadeh.  Swazure: Swarm Measurement of Pose for Flying Light Specks.  In ',
+  conferenceTitle: 'Second International Conference on Holodecks',
+  conferenceLink: 'https://www.holodecks.quest/agenda-2024',
+  location: ', Los Angeles, USA',
+  citeAfterLink: ', December 19, 2024',
+  pdf: 'https://www.holodecks.quest/_files/ugd/fb2888_c1bca9ab88a247579a554a3b901ec688.pdf',
+},
+{
+  citeBeforeLink: 'S. Zhu and S. Ghandeharizadeh.  Circular Flight Patterns for Dronevision.  In ',
+  conferenceTitle: 'Second International Conference on Holodecks',
+  conferenceLink: 'https://www.holodecks.quest/agenda-2024',
+  location: ', Los Angeles, USA',
+  citeAfterLink: ', December 19, 2024',
+  pdf: 'https://www.holodecks.quest/_files/ugd/9de2a3_56d6674c4495453e9d14b94c66603dd8.pdf',
+  videoLink: 'https://www.youtube.com/watch?v=H60r2oTPB4k',
+  videoText: 'Video',
+},
+{
   citeBeforeLink: 'H. Alimohammadzadeh and S. Ghandeharizadeh. Swarical: An Integrated Hierarchical Approach to Localizing Flying Light Specks. In ACM Multimedia, Melbourne, Australia, October 2024.',
   conferenceTitle: '',
   location: '',
