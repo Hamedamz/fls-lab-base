@@ -44,7 +44,7 @@ const publications = [
   conferenceTitle: 'Second International Conference on Holodecks',
   conferenceLink: 'https://www.holodecks.quest/agenda-2024',
   location: ', Los Angeles, USA',
-  citeAfterLink: ', December 19, 2024',
+  citeAfterLink: ', December 19, 2024.',
   pdf: 'https://www.holodecks.quest/_files/ugd/fb2888_c1bca9ab88a247579a554a3b901ec688.pdf',
 },
 {
@@ -52,7 +52,7 @@ const publications = [
   conferenceTitle: 'Second International Conference on Holodecks',
   conferenceLink: 'https://www.holodecks.quest/agenda-2024',
   location: ', Los Angeles, USA',
-  citeAfterLink: ', December 19, 2024',
+  citeAfterLink: ', December 19, 2024.',
   pdf: 'https://www.holodecks.quest/_files/ugd/9de2a3_56d6674c4495453e9d14b94c66603dd8.pdf',
   videoLink: 'https://www.youtube.com/watch?v=H60r2oTPB4k',
   videoText: 'Video',
