@@ -14,6 +14,9 @@
                   {{ pub.conferenceTitle }}
                 </a>
                 {{ pub.location }}{{ pub.citeAfterLink }}
+                <a v-if="pub.additionalLink" :href="pub.additionalLink" target="_blank" class="additional-link">
+                  {{ pub.additionalLinkText }}
+                </a>
               </p>
             </div>
           </div>
@@ -39,6 +42,17 @@
 <script setup>
 import NSFLogoImage from "@/assets/images/NSF_logo.png";
 const publications = [
+
+{
+  citeBeforeLink: 'Hamed Alimohammadzadeh, Shuqin Zhu, and Shahram Ghandeharizadeh. 2025. Techniques to Conceal Dark Standby Flying Light Specks. ',
+  conferenceTitle: 'ACM Trans. Multimedia Comput. Commun. Appl.',
+  conferenceLink: 'https://dl.acm.org/journal/tomm',
+  location: '',
+  citeAfterLink: ' Just Accepted (April 2025). ',
+  additionalLink: 'https://doi.org/10.1145/3724399',
+  additionalLinkText: 'https://doi.org/10.1145/3724399',
+  pdf: 'https://dl.acm.org/doi/pdf/10.1145/3724399',
+},
 {
   citeBeforeLink: 'H. Alimohammadzadeh and S. Ghandeharizadeh.  Swazure: Swarm Measurement of Pose for Flying Light Specks.  In ',
   conferenceTitle: 'Second International Conference on Holodecks',
@@ -195,12 +209,12 @@ const publications = [
   margin: 0;
 }
 
-.conference-link, .pdf-link, .source-code-link {
+.conference-link, .pdf-link, .source-code-link, .video-link, .additional-link {
   color: #63b3ed; /* Blue color for the links */
   text-decoration: none; /* Removes underline */
 }
 
-.conference-link:hover, .pdf-link:hover, .source-code-link:hover {
+.conference-link:hover, .pdf-link:hover, .source-code-link:hover, .video-link:hover, .additional-link:hover {
   color: #3182ce; /* Darker blue on hover */
 }
 </style>
