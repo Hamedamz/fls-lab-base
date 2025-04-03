@@ -50,7 +50,7 @@ const publications = [
   location: '',
   citeAfterLink: ' Just Accepted (April 2025). ',
   additionalLink: 'https://doi.org/10.1145/3724399',
-  additionalLinkText: 'https://doi.org/10.1145/3724399',
+  additionalLinkText: '',
   pdf: 'https://dl.acm.org/doi/pdf/10.1145/3724399',
 },
 {
