@@ -46,11 +46,11 @@ const publications = [
 {
   citeBeforeLink: 'Hamed Alimohammadzadeh, Shuqin Zhu, and Shahram Ghandeharizadeh. 2025. Techniques to Conceal Dark Standby Flying Light Specks. ',
   conferenceTitle: 'ACM Trans. Multimedia Comput. Commun. Appl.',
-  conferenceLink: 'https://dl.acm.org/journal/tomm',
+  conferenceLink: '',
   location: '',
-  citeAfterLink: ' Just Accepted (April 2025). https://doi.org/10.1145/3724399',
-  additionalLink: '',
-  additionalLinkText: '',
+  citeAfterLink: ' Just Accepted (April 2025). ',
+  additionalLink: 'https://doi.org/10.1145/3724399',
+  additionalLinkText: 'https://doi.org/10.1145/3724399',
   pdf: 'https://dl.acm.org/doi/pdf/10.1145/3724399',
 },
 {
