@@ -42,7 +42,47 @@
 <script setup>
 import NSFLogoImage from "@/assets/images/NSF_logo.png";
 const publications = [
-
+  
+{
+  citeBeforeLink: "N. Yazdani and S. Ghandeharizadeh.  Integration of 3D FLS Displays with 3D Authoring Tools.  In the 3rd ACM International Workshop on Interactive Extended Reality, co-located with the ACM Multimedia Conference, IXR '25, Dublin, Ireland, October 29, 2025.",
+  conferenceTitle: "",
+  conferenceLink: "",
+  location: "",
+  citeAfterLink: " ",
+  additionalLink: " https://doi.org/10.1145/3746278.3759395",
+  additionalLinkText: " https://doi.org/10.1145/3746278.3759395",
+  pdf: "",
+},
+{
+citeBeforeLink: 'H. Alimohammadzadeh, S. Ghandeharizadeh, Federico Cunico, and Joshua Springer.  Reproducibility Companion Paper: Swarical: An Integrated Hierarchical Approach to Localizing Flying Light Specks.  In ACM Multimedia 2025, Dublin, Ireland, October 2025.',
+  conferenceTitle: '',
+  conferenceLink: '',
+  location: '',
+  citeAfterLink: ' ',
+  additionalLink: ' https://doi.org/10.1145/3746027.3759199',
+  additionalLinkText: ' https://doi.org/10.1145/3746027.3759199',
+  pdf: '',
+},
+{
+  citeBeforeLink: "H. Alimohammadzadeh and S. Ghandeharizadeh.  Illuminating English Letters using a Flying Light Speck.  In the 3rd ACM International Workshop on UAVs in Multimedia: Capturing the World from a New Perspective, co-located with the ACM Multimedia Conference, UAVM '25, Dublin, Ireland, October 29, 2025.",
+  conferenceTitle: "",
+  conferenceLink: "",
+  location: "",
+  citeAfterLink: " ",
+  additionalLink: " https://doi.org/10.1145/3728482.3757388",
+  additionalLinkText: " https://doi.org/10.1145/3728482.3757388",
+  pdf: "",
+},
+{
+citeBeforeLink: 'S. Ghandeharizadeh. Keynote. Flying Light Specks: Dronevision, Holodecks and Spatial Computing. In the 3rd International Workshop on Multimedia Content Generation and Evaluation: New Methods and Practice held in conjunction with the ACM Multimedia 2025.  Dublin, Ireland, October 29, 2025.',
+  conferenceTitle: '',
+  conferenceLink: '',
+  location: '',
+  citeAfterLink: ' ',
+  additionalLink: ' https://doi.org/10.1145/3746278.3759395',
+  additionalLinkText: ' https://doi.org/10.1145/3746278.3759395',
+  pdf: '',
+},
 {
   citeBeforeLink: 'Hamed Alimohammadzadeh, Shuqin Zhu, and Shahram Ghandeharizadeh. 2025. Techniques to Conceal Dark Standby Flying Light Specks. ACM Trans. Multimedia Comput. Commun. Appl.',
   conferenceTitle: 'ACM Trans. Multimedia Comput. Commun. Appl.',
