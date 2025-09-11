@@ -12,10 +12,7 @@
               class="bg-slate-800 p-6 rounded-lg shadow-md relative"
             >
               <button
-                v-if="
-                  person.name === 'Shahram Ghandeharizadeh' ||
-                  person.name === 'Heather Culbertson'
-                "
+                v-if="person.bio"
                 @click="toggleBio(person)"
                 class="absolute top-2 right-2 w-12 h-12 rounded-full hover:bg-slate-700 text-2xl text-white"
               >
