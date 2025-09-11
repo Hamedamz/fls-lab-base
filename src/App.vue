@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto my-0 lg:p-0 max-w-screen-xl h-full">
     <!-- Header Section -->
-    <header class="pt-4 sticky top-0 bg-gray-900 backdrop-blur-md backdrop-filter firefox-opacity-90 lg:pt-0 fixed w-full z-10 border-b border-r-gray-800 place-items-center flex justify-between">
+    <header class="pt-4 sticky top-0 bg-gray-900 bg-opacity-50 backdrop-blur backdrop-filter firefox-opacity-90 lg:pt-0 fixed w-full z-10 border-b border-r-gray-800 place-items-center flex justify-between">
       <!-- FLS Lab Title (small) -->
       <div class="text-white font-bold text-sm px-4">FLS Lab</div>
       <!-- Navigation Links -->
