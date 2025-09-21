@@ -1,3 +1,37 @@
+<template>
+  <div class="flex flex-col items-left">
+    <h1 class="mb-8 text-3xl font-black text-white">Publications</h1>
+
+    <div class="tab-content-container w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div v-for="(pub, i) in publications" :key="i"
+          class="p-6 bg-slate-800 rounded-lg shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-baseline">
+              <span class="text-white font-bold">{{ i + 1 }}</span>
+              <span class="text-cyan-500 mr-2 font-bold">.</span>
+              <p class="text-white">
+                {{ pub.citeBeforeLink }}
+                <a v-if="pub.conferenceLink" :href="pub.conferenceLink" target="_blank">
+                  {{ pub.conferenceTitle }}
+                </a>
+                {{ pub.location }}{{ pub.citeAfterLink }}
+                <a v-if="pub.additionalLink" :href="pub.additionalLink" target="_blank">
+                  {{ pub.additionalLinkText }}
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 flex justify-end">
+            <a v-if="pub.pdf" :href="pub.pdf" target="_blank" class="pdf-link mr-2">pdf</a>
+            <a v-if="pub.videoLink" :href="pub.videoLink" target="_blank" class="video-link">{{ pub.videoText }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script setup>
 const publications = [
   {
@@ -196,62 +230,5 @@ const publications = [
   },
 ];
 </script>
-
-<template>
-  <div class="flex flex-col items-left">
-    <h1 class="mb-8 text-3xl font-black text-white">Publications</h1>
-
-    <div class="tab-content-container w-full">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div
-          v-for="(pub, i) in publications"
-          :key="i"
-          class="p-6 bg-slate-800 rounded-lg shadow-md flex flex-col justify-between"
-        >
-          <div>
-            <div class="flex items-baseline">
-              <span class="text-white font-bold">{{ i + 1 }}</span>
-              <span class="text-cyan-500 mr-2 font-bold">.</span>
-              <p class="text-white">
-                {{ pub.citeBeforeLink }}
-                <a
-                  v-if="pub.conferenceLink"
-                  :href="pub.conferenceLink"
-                  target="_blank"
-                >
-                  {{ pub.conferenceTitle }}
-                </a>
-                {{ pub.location }}{{ pub.citeAfterLink }}
-                <a
-                  v-if="pub.additionalLink"
-                  :href="pub.additionalLink"
-                  target="_blank"
-                >
-                  {{ pub.additionalLinkText }}
-                </a>
-              </p>
-            </div>
-          </div>
-          <div class="mt-4 flex justify-end">
-            <a
-              v-if="pub.pdf"
-              :href="pub.pdf"
-              target="_blank"
-              class="pdf-link mr-2"
-              >pdf</a
-            >
-            <a
-              v-if="pub.videoLink"
-              :href="pub.videoLink"
-              target="_blank"
-              class="video-link"
-              >{{ pub.videoText }}</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
 
 <style scoped></style>
