@@ -6,23 +6,13 @@
         <div v-for="group in personnelGroups" :key="group.title">
           <h2 class="text-2xl font-bold mb-4 text-white">{{ group.title }}</h2>
           <div class="grid gap-4">
-            <div
-              v-for="person in group.items"
-              :key="person.name"
-              class="bg-slate-800 p-6 rounded-lg shadow-md relative"
-            >
-              <button
-                v-if="person.bio"
-                @click="toggleBio(person)"
-                class="absolute top-2 right-2 w-12 h-12 rounded-full hover:bg-slate-700 text-2xl text-white"
-              >
+            <div v-for="person in group.items" :key="person.name"
+              class="bg-slate-800 p-6 rounded-lg shadow-md relative">
+              <button v-if="person.bio" @click="toggleBio(person)"
+                class="absolute top-2 right-2 w-12 h-12 rounded-full hover:bg-slate-700 text-2xl text-white">
                 +
               </button>
-              <img
-                :src="person.photo"
-                alt="Person"
-                class="mx-auto w-32 h-32 rounded-full mb-4"
-              />
+              <img :src="person.photo" alt="Person" class="mx-auto w-32 h-32 rounded-full mb-4" />
               <p class="text-center text-xl text-white mt-2">
                 {{ person.name }}
               </p>
@@ -38,10 +28,7 @@
       </div>
     </div>
     <div class="mt-12 text-2xl text-center">
-      <router-link
-        to="/alumni"
-        class="text-cyan-500 transition-colors rounded p-px underline hover:bg-cyan-500/25"
-      >
+      <router-link to="/alumni" class="text-cyan-500 transition-colors rounded p-px underline hover:bg-cyan-500/25">
         View Alumni
       </router-link>
     </div>
@@ -49,17 +36,10 @@
 </template>
 
 <script setup>
-import GeorgeScholefield from "@/assets/images/GeorgeScholefield.jpg";
 import HamedAlimohammadzadeh from "@/assets/images/HamedAlimohammadzadeh.jpg";
 import HeatherCulbertson from "@/assets/images/HeatherCulbertson.jpg";
-import JasmineCarrion from "@/assets/images/Jasmine_Carrion.jpg";
-import KarienaPanpaliya from "@/assets/images/KarienaPanpaliya.jpg";
-import NimaYazdani from "@/assets/images/NimaYazdani.jpg";
 import ShahramGhandeharizadeh from "@/assets/images/ShahramGhandeharizadeh.jpg";
 import ShuqinZhu from "@/assets/images/ShuqinZhu.jpg";
-import WallaceBrowning from "@/assets/images/WallaceBrowning.jpg";
-import XuanyuPan from "@/assets/images/Xuanyu_Pan.jpg";
-import YangChen from "@/assets/images/YangChen.jpg";
 import BlankProfile from "@/assets/images/Blank_Profile.png";
 import AllenLam from "@/assets/images/allen_lam.jpeg";
 
