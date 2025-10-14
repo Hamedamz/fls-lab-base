@@ -4,20 +4,13 @@
     <div class="text-white text-2xl mb-4">
       <p class="mb-2">
         Advances in computing, storage, communication, and robotics have enabled
-        the vision of intelligent 3D multimedia systems.
-      </p>
-      <p class="mb-2">
-        We investigate the design, implementation, applications, and social
-        implications of these systems.
-      </p>
-      <p class="mb-2">
-        Applications are diverse ranging from healthcare to entertainment. They
-        include haptic interactions.
-      </p>
-      <p class="mb-2">Their data is multi-modal and rich with semantics.</p>
-      <p class="mb-2">
-        We foresee the systems and their applications to revolutionize how we
-        work, learn, play and entertain, receive medical care, and socialize.
+        the vision of intelligent 3D multimedia systems. We investigate the
+        design, implementation, applications, and social implications of these
+        systems. Applications are diverse ranging from healthcare to
+        entertainment. They include haptic interactions. Their data is
+        multi-modal and rich with semantics. We foresee the systems and their
+        applications to revolutionize how we work, learn, play and entertain,
+        receive medical care, and socialize.
       </p>
     </div>
     <!-- Importing and displaying the image -->

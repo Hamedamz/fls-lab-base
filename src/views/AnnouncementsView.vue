@@ -17,7 +17,7 @@
 const announcements = [
   {
     content:
-      '<a href="https://www.holodecks.quest" target="_blank" class="underline">The Third International Conference on Holodecks</a> will take place on Jan. 8, 2026.',
+      '<a href="https://www.holodecks.quest" target="_blank" class="underline">The Third International Conference on Holodecks</a> will take place on July 24th, 2026.',
   },
   {
     content:
