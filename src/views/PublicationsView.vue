@@ -4,27 +4,50 @@
 
     <div class="tab-content-container w-full">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div v-for="(pub, i) in publications" :key="i"
-          class="p-6 bg-slate-800 rounded-lg shadow-md flex flex-col justify-between">
+        <div
+          v-for="(pub, i) in publications"
+          :key="i"
+          class="p-6 bg-slate-800 rounded-lg shadow-md flex flex-col justify-between"
+        >
           <div>
             <div class="flex items-baseline">
               <span class="text-white font-bold">{{ i + 1 }}</span>
               <span class="text-cyan-500 mr-2 font-bold">.</span>
               <p class="text-white">
                 {{ pub.citeBeforeLink }}
-                <a v-if="pub.conferenceLink" :href="pub.conferenceLink" target="_blank">
+                <a
+                  v-if="pub.conferenceLink"
+                  :href="pub.conferenceLink"
+                  target="_blank"
+                >
                   {{ pub.conferenceTitle }}
                 </a>
                 {{ pub.location }}{{ pub.citeAfterLink }}
-                <a v-if="pub.additionalLink" :href="pub.additionalLink" target="_blank">
+                <a
+                  v-if="pub.additionalLink"
+                  :href="pub.additionalLink"
+                  target="_blank"
+                >
                   {{ pub.additionalLinkText }}
                 </a>
               </p>
             </div>
           </div>
           <div class="mt-4 flex justify-end">
-            <a v-if="pub.pdf" :href="pub.pdf" target="_blank" class="pdf-link mr-2">pdf</a>
-            <a v-if="pub.videoLink" :href="pub.videoLink" target="_blank" class="video-link">{{ pub.videoText }}</a>
+            <a
+              v-if="pub.pdf"
+              :href="pub.pdf"
+              target="_blank"
+              class="pdf-link mr-2"
+              >pdf</a
+            >
+            <a
+              v-if="pub.videoLink"
+              :href="pub.videoLink"
+              target="_blank"
+              class="video-link"
+              >{{ pub.videoText }}</a
+            >
           </div>
         </div>
       </div>
@@ -41,8 +64,8 @@ const publications = [
     conferenceLink: "",
     location: "",
     citeAfterLink: " ",
-    additionalLink: " https://doi.org/10.1145/3746278.3759395",
-    additionalLinkText: " https://doi.org/10.1145/3746278.3759395",
+    additionalLink: " https://doi.org/10.1145/3746269.3760418",
+    additionalLinkText: " https://doi.org/10.1145/3746269.3760418",
     pdf: "",
   },
   {
