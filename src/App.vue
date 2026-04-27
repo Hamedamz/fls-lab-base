@@ -30,7 +30,7 @@
         >
         <RouterLink
           active-class="active-link"
-          :to="{ name: 'courses' }"
+          :to="{ name: 'announcements' }"
           class="text-white py-2 px-4 hover:bg-gray-700 rounded"
           >Announcements</RouterLink
         >
