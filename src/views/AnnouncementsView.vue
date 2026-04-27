@@ -17,6 +17,10 @@
 const announcements = [
   {
     content:
+      'We will be holding a workshop entitled "<a href="https://www.flsworkshop.com/" target="_blank" class="underline">Dronevision, Holodecks, and Spatial Computing using Flying Light Specks</a> at the ACM SIGGRAPH Frontiers Program on July 23, 2026.',
+  },
+  {
+    content:
       '<a href="https://www.holodecks.quest" target="_blank" class="underline">The Third International Conference on Holodecks</a> will take place on July 24th, 2026.',
   },
   {
