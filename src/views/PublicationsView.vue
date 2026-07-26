@@ -59,6 +59,39 @@
 const publications = [
   {
     citeBeforeLink:
+      "H. Alimohammadzadeh, S. Ghandeharizadeh. LightBenders: Authoring and Illuminating Line Drawings In Proceedings of the 34th ACM International Conference on Multimedia (MM ‘26).",
+    conferenceTitle: "",
+    conferenceLink: "",
+    location: "",
+    citeAfterLink: " ",
+    additionalLink: "",
+    additionalLinkText: "",
+    pdf: "",
+  },
+  {
+    citeBeforeLink:
+      "H. Alimohammadzadeh and S. Ghandeharizadeh. 2026. Indoor Drone Visual Effects Using LightBenders. In Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Posters (SIGGRAPH Posters '26). Association for Computing Machinery, New York, NY, USA, Article 58, 1–3.",
+    conferenceTitle: "",
+    conferenceLink: "",
+    location: "",
+    citeAfterLink: " ",
+    additionalLink: "https://doi.org/10.1145/3799825.3818746",
+    additionalLinkText: "https://doi.org/10.1145/3799825.3818746",
+    pdf: "",
+  },
+  {
+    citeBeforeLink:
+      "S. Ghandeharizadeh.  Dronevision, Holodecks, and Spatial Computing using Flying Light Specks.  In Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Frontiers (SIGGRAPH Frontiers '26). Article No. 7, Pages 1 - 3.",
+    conferenceTitle: "",
+    conferenceLink: "",
+    location: "",
+    citeAfterLink: " ",
+    additionalLink: "https://dl.acm.org/doi/10.1145/3799885.3816016",
+    additionalLinkText: "https://dl.acm.org/doi/10.1145/3799885.3816016",
+    pdf: "",
+  },
+  {
+    citeBeforeLink:
       "N. Yazdani and S. Ghandeharizadeh.  Integration of 3D FLS Displays with 3D Authoring Tools.  In the 3rd ACM International Workshop on Interactive Extended Reality, co-located with the ACM Multimedia Conference, IXR '25, Dublin, Ireland, October 29, 2025.",
     conferenceTitle: "",
     conferenceLink: "",
