@@ -6,14 +6,17 @@
       <div class="bg-slate-800 p-6 rounded-lg shadow-md mb-4">
         <h2 class="text-2xl font-bold mb-4 text-white">Overview</h2>
         <p class="text-white text-xl">
-          Our current efforts are focused on 3D multimedia displays using the Flying Light
-          Specks, FLSs. An FLS is a miniature sized drone configured with light sources to
-          illuminate 3D multimedia objects in a fixed volume, an FLS display. A swarm of
-          FLSs may provide haptic interactions by exerting force back at a user’s touch.
-          Our technical efforts can be divided into four thrusts: FLS-Matter and 3D
-          Displays, Localization and Communication, Fault Tolerance & Battery, User
-          Safety.
+          Flying Light Specks (FLSs) introduce a new paradigm in physical AI, 3D volumetric multimedia displays, and micro-drone swarm intelligence. An FLS is a miniature drone equipped with a lighting primitive. A swarm of FLSs self-assembles within a fixed volume, an FLS display, to illuminate and augment both virtual and physical objects. These objects are visible to the naked eye and support bare-hand interaction. The resulting intelligent engineered system enables bidirectional interaction between humans and a physics-based environment. For example, a swarm of FLSs may illuminate the bricks of a Jenga game while dynamically implementing their physics-based surface friction in response to a user's bare-hand manipulation of a brick.
         </p>
+      </div>
+
+      <!-- LightBender Section -->
+      <div class="bg-slate-800 p-6 rounded-lg shadow-md mb-4">
+        <h2 class="text-2xl font-bold mb-4 text-white">LightBender</h2>
+        <p class="text-white text-xl">
+          A <a href="https://arxiv.org/abs/2606.22499" target="_blank" class="underline">LightBender</a> is a type of Flying Light Speck, FLS. Its lighting primitive is a servo-actuated rod with a dense, addressable LED strip. It is designed to illuminate mid-air <a href="https://youtu.be/j4nlgD3iAyM" target="_blank" class="underline">line drawing</a> and letterforms. Its software implements algorithms and heuristics to estimate the minimum number of LightBenders required for a given drawing while computing staggered swarm formations that mitigate rotor downwash. The software generates a Swarm Flight and Lighting (SFL) file specifying coordinated flight trajectories and lighting commands. It is embodied in a <a href="https://youtu.be/DhsHoG3VMiQ" target="_blank" class="underline">Blender add-on</a> that launches a swarm of LightBenders with a click of a button to illuminate the line drawing. This add-on supports <a href="https://youtu.be/XbsEkBngdZY" target="_blank" class="underline">visual effects</a> such as fly-in, fly-out, fold, sparkle and others with a click of a button. When equipped with a protective cage, a LightBender provides safe <a href="https://youtu.be/LsTwUVTbn1E" target="_blank" class="underline">bare-hand interaction</a>. One application is <a href="https://youtu.be/_I6qcD0NoYM" target="_blank" class="underline">bidirectional illumination editing</a>, in which a user's direct manipulation of the rendered graphics is detected and synchronized back to the authoring software.
+        </p>
+        <img :src="LightBenderIMG" alt="LightBender Image" class="mt-4 w-1/2 mx-auto rounded-lg shadow-lg" />
       </div>
 
       <!-- FLS-Matter and 3D Displays Section -->
@@ -44,7 +47,7 @@
           resemble futuristic systems from sci-fi movies and shows, e.g., Star Trek’s
           Holodeck.
         </p>
-        <img :src="HolodeckIMG" alt="Holodeck Image" class="mt-4 w-1/2 mx-auto" />
+        <img :src="HolodeckIMG" alt="Holodeck Image" class="mt-4 w-1/2 mx-auto rounded-lg shadow-lg" />
       </div>
 
       <!-- Localization and Communication Section -->
@@ -136,11 +139,13 @@
 
 <script>
 import HolodeckIMG from "@/assets/images/HolodeckIMG.png";
+import LightBenderIMG from "@/assets/images/LightBenderIMG.jpg";
 
 export default {
   data() {
     return {
       HolodeckIMG,
+      LightBenderIMG,
     };
   },
 };
