@@ -17,19 +17,19 @@
       <nav id="primary-navigation" class="primary-nav" :class="{ 'is-open': menuOpen }">
         <RouterLink to="/">Home</RouterLink>
         <div class="nav-group">
-          <RouterLink to="/technology">Technology</RouterLink>
+          <RouterLink to="/products">Products</RouterLink>
           <div class="nav-submenu">
+            <RouterLink to="/dronevision">Dronevision</RouterLink>
+            <RouterLink to="/tiles">Tile</RouterLink>
             <RouterLink to="/technology">Research</RouterLink>
-            <RouterLink to="/personnel">Personnel</RouterLink>
           </div>
         </div>
-        <RouterLink to="/publications">Publications</RouterLink>
-        <RouterLink to="/announcements">Announcements</RouterLink>
+        <RouterLink to="/resources">Resources</RouterLink>
       </nav>
-      <a class="button button-gradient header-contact" href="https://github.com/flyinglightspeck" target="_blank" rel="noreferrer">GitHub</a>
+      <RouterLink class="button button-gradient header-contact" to="/contact">Contact Us</RouterLink>
     </header>
 
-    <main id="main-content" class="site-main">
+    <main id="main-content" class="site-main" :class="{ 'legacy-page': isLegacyPage }">
       <RouterView />
     </main>
 
@@ -39,7 +39,7 @@
           <p class="eyebrow">From the lab</p>
           <h2>Curious what light can do?</h2>
           <p>Explore our latest research, products, and collaborations.</p>
-          <p class="footer-cta-note">Explore our work through the links below.</p>
+          <RouterLink class="button button-dark footer-cta" to="/contact">Get in touch <span aria-hidden="true">→</span></RouterLink>
         </div>
         <div class="footer-links">
           <div class="footer-about">
@@ -49,16 +49,19 @@
           </div>
           <div>
             <h3>Products</h3>
-          <RouterLink to="/technology">Technology</RouterLink>
+          <RouterLink to="/dronevision">Dronevision</RouterLink>
+          <RouterLink to="/tiles">Tile</RouterLink>
           </div>
           <div>
             <h3>Resources</h3>
-            <RouterLink to="/personnel">Personnel</RouterLink>
+            <RouterLink to="/about">About FLS Lab</RouterLink>
             <RouterLink to="/publications">Publications</RouterLink>
             <RouterLink to="/announcements">Announcements</RouterLink>
+            <RouterLink to="/resources">Resources</RouterLink>
           </div>
           <div>
             <h3>Connect</h3>
+            <RouterLink to="/contact">Contact Us</RouterLink>
             <a href="https://github.com/flyinglightspeck" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
@@ -75,10 +78,11 @@
 </template>
 
 <script setup>
-import { ref, watch } from "vue";
+import { computed, ref, watch } from "vue";
 import { RouterLink, RouterView, useRoute } from "vue-router";
 
 const menuOpen = ref(false);
 const route = useRoute();
+const isLegacyPage = computed(() => ["/technology", "/personnel", "/publications", "/announcements", "/alumni"].includes(route.path));
 watch(() => route.fullPath, () => { menuOpen.value = false; });
 </script>
