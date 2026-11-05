@@ -21,10 +21,14 @@
           <div class="nav-submenu">
             <RouterLink to="/dronevision">Dronevision</RouterLink>
             <RouterLink to="/tiles">Tile</RouterLink>
+          </div>
+        </div>
+        <div class="nav-group">
+          <RouterLink to="/resources">Resources</RouterLink>
+          <div class="nav-submenu">
             <RouterLink to="/technology">Research</RouterLink>
           </div>
         </div>
-        <RouterLink to="/resources">Resources</RouterLink>
       </nav>
       <RouterLink class="button button-gradient header-contact" to="/contact">Contact Us</RouterLink>
     </header>
