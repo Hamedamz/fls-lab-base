@@ -1,6 +1,6 @@
 <template>
   <div class="site-shell">
-    <header class="site-header" :class="{ 'is-scrolled': isScrolled }">
+    <header class="site-header" :class="{ 'is-scrolled': isScrolled, 'is-hidden': isHidden }">
       <RouterLink class="brand" to="/" exact-active-class="is-active" aria-label="FLS Lab home">
         <img class="brand-full" src="@/assets/images/figma/fls-logo.png" alt="" />
         <img class="brand-compact" src="@/assets/images/figma/fls-logo.png" alt="" aria-hidden="true" />
@@ -92,15 +92,29 @@ import { RouterLink, RouterView, useRoute } from "vue-router";
 
 const menuOpen = ref(false);
 const isScrolled = ref(false);
+const isHidden = ref(false);
 const route = useRoute();
 const isLegacyPage = computed(() => ["/technology", "/personnel", "/publications", "/announcements", "/alumni"].includes(route.path));
 watch(() => route.fullPath, () => { menuOpen.value = false; });
 
+let lastScrollY = 0;
 function updateScrollState() {
-  isScrolled.value = window.scrollY > 40;
+  const currentScrollY = window.scrollY;
+  isScrolled.value = currentScrollY > 40;
+
+  if (currentScrollY <= 64) {
+    isHidden.value = false;
+  } else if (currentScrollY > 240 && currentScrollY > lastScrollY) {
+    isHidden.value = true;
+  } else if (currentScrollY < lastScrollY) {
+    isHidden.value = false;
+  }
+
+  lastScrollY = currentScrollY;
 }
 
 onMounted(() => {
+  lastScrollY = window.scrollY;
   updateScrollState();
   window.addEventListener("scroll", updateScrollState, { passive: true });
 });
