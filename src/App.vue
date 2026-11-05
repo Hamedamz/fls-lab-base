@@ -27,6 +27,10 @@
           <RouterLink to="/resources">Resources</RouterLink>
           <div class="nav-submenu">
             <RouterLink to="/technology">Research</RouterLink>
+            <RouterLink to="/about">About Us</RouterLink>
+            <RouterLink to="/publications">Publications</RouterLink>
+            <RouterLink to="/announcements">Announcements</RouterLink>
+            <RouterLink to="/github">GitHub</RouterLink>
           </div>
         </div>
       </nav>
