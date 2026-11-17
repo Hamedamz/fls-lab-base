@@ -1,6 +1,6 @@
 <template>
   <div class="site-shell">
-    <header class="site-header" :class="{ 'is-scrolled': isScrolled, 'is-hidden': isHidden }">
+    <header class="site-header" :class="{ 'is-scrolled': isScrolled }">
       <RouterLink class="brand" to="/" exact-active-class="is-active" aria-label="FLS Lab home">
         <img class="brand-full" src="@/assets/images/figma/fls-logo.png" alt="" />
         <img class="brand-compact" src="@/assets/images/figma/fls-logo.png" alt="" aria-hidden="true" />
@@ -42,7 +42,7 @@
       <RouterView />
     </main>
 
-    <footer class="gradient-footer">
+    <footer ref="footerEl" class="gradient-footer">
       <div class="footer-card">
         <div class="footer-lead">
           <p class="eyebrow">From the lab</p>
@@ -76,7 +76,7 @@
         </div>
         <div class="footer-bottom">
           <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2425754&HistoricalAwards=false" target="_blank" rel="noreferrer">
-            <img src="@/assets/images/NSF_logo.png" alt="Supported by the National Science Foundation" />
+            <img src="@/assets/images/NSF_logo-small.png" alt="Supported by the National Science Foundation" />
           </a>
           <span>© {{ new Date().getFullYear() }} FLS Lab. All rights reserved.</span>
           <span>Exploring a more dimensional tomorrow.</span>
@@ -92,34 +92,17 @@ import { RouterLink, RouterView, useRoute } from "vue-router";
 
 const menuOpen = ref(false);
 const isScrolled = ref(false);
-const isHidden = ref(false);
+const footerEl = ref(null);
+const footerVisible = ref(false);
 const route = useRoute();
 const isLegacyPage = computed(() => ["/technology", "/personnel", "/publications", "/announcements", "/alumni"].includes(route.path));
 watch(() => route.fullPath, () => { menuOpen.value = false; });
 
-let lastScrollY = 0;
-function updateScrollState() {
-  const currentScrollY = window.scrollY;
-  isScrolled.value = currentScrollY > 40;
-
-  if (currentScrollY <= 64) {
-    isHidden.value = false;
-  } else if (currentScrollY > 240 && currentScrollY > lastScrollY) {
-    isHidden.value = true;
-  } else if (currentScrollY < lastScrollY) {
-    isHidden.value = false;
-  }
-
-  lastScrollY = currentScrollY;
-}
-
+watch([footerVisible, menuOpen], () => { isScrolled.value = footerVisible.value && !menuOpen.value; });
+let footerObserver;
 onMounted(() => {
-  lastScrollY = window.scrollY;
-  updateScrollState();
-  window.addEventListener("scroll", updateScrollState, { passive: true });
+ footerObserver = new IntersectionObserver(([entry]) => { footerVisible.value = entry.isIntersecting; });
+ if (footerEl.value) footerObserver.observe(footerEl.value);
 });
-
-onBeforeUnmount(() => {
-  window.removeEventListener("scroll", updateScrollState);
-});
+onBeforeUnmount(() => footerObserver?.disconnect());
 </script>

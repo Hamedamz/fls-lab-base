@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <section class="hero-video" aria-labelledby="home-title">
-      <video v-if="heroVideo" ref="videoEl" class="hero-video-media" :src="heroVideo" :autoplay="!reduceMotion" muted loop playsinline></video>
+      <video v-if="heroVideo" ref="videoEl" preload="metadata" class="hero-video-media" :src="heroVideo" :autoplay="!reduceMotion" muted loop playsinline></video>
       <div class="hero-grid" aria-hidden="true"></div>
       <span class="hero-label">{{ heroVideo ? "FLS Lab" : "Hero video asset needed" }}</span>
       <button v-if="heroVideo" class="video-toggle" type="button" @click="toggleVideo">{{ videoPaused ? "Play video" : "Pause video" }}</button>
@@ -73,7 +73,7 @@ import { ref, onMounted, onBeforeUnmount } from "vue";
 import { RouterLink } from "vue-router";
 
 // Add the approved looping hero video under public/media and set this path.
-const heroVideo = "";
+const heroVideo = import.meta.env.VITE_HERO_VIDEO_URL || "";
 const videoEl = ref(null);
 const reduceMotion = ref(false);
 const videoPaused = ref(false);
@@ -167,5 +167,5 @@ const announcements = [
 .announcement-card h3 { margin:0 0 6px; font-size:15px; }.announcement-card p { margin:0; font-size:13px; line-height:1.45; color:#657b91; }
 .home-cta { margin:80px 0 70px; padding:32px 40px; display:flex; align-items:center; justify-content:space-between; gap:24px; border-radius:16px; background:#d4e9fb; }
 .home-cta h2 { font-size:28px; }.home-cta p:not(.eyebrow) { margin:8px 0 0; color:#526b83; }
-@media(max-width:760px){.hero-video{margin:0 calc((min(100vw - 36px,1296px) - 100vw)/2);height:520px}.hero-title-wrap{padding-bottom:42px}.research-strip{align-items:flex-start;flex-direction:column;justify-content:center;padding:22px 0;font-size:11px}.research-strip span:last-child{text-align:left}.home-section{padding-top:58px}.research-intro{grid-template-columns:1fr;gap:8px}.product-grid,.feature-grid,.info-grid,.announcement-preview{grid-template-columns:1fr}.tile-art{height:230px}.feature-art{height:190px}.split-feature,.split-feature.reverse{grid-template-columns:1fr;gap:24px}.split-feature.reverse .visual-placeholder{order:2}.visual-placeholder{min-height:260px}.info-card{grid-template-columns:34% 1fr;gap:14px}.mini-art{min-height:130px}.home-cta{align-items:flex-start;flex-direction:column;margin:50px 0;padding:26px}}
+@media(max-width:760px){.hero-video{margin:0 calc((min(100vw - 36px,1296px) - 100vw)/2);height:clamp(340px,65svh,520px)}.hero-title-wrap{padding-bottom:42px}.research-strip{align-items:flex-start;flex-direction:column;justify-content:center;padding:22px 0;font-size:11px}.research-strip span:last-child{text-align:left}.home-section{padding-top:58px}.research-intro{grid-template-columns:1fr;gap:8px}.product-grid,.feature-grid,.info-grid,.announcement-preview{grid-template-columns:1fr}.tile-art{height:230px}.feature-art{height:190px}.split-feature,.split-feature.reverse{grid-template-columns:1fr;gap:24px}.split-feature.reverse .visual-placeholder{order:2}.visual-placeholder{min-height:260px}.info-card{grid-template-columns:34% 1fr;gap:14px}.mini-art{min-height:130px}.home-cta{align-items:flex-start;flex-direction:column;margin:50px 0;padding:26px}}
 </style>
