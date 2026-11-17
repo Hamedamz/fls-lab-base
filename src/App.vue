@@ -1,6 +1,6 @@
 <template>
   <div class="site-shell">
-    <header class="site-header" :class="{ 'is-scrolled': isScrolled }">
+    <header class="site-header" :class="{ 'is-hidden': isScrolled }" :inert="isScrolled ? true : undefined">
       <RouterLink class="brand" to="/" exact-active-class="is-active" aria-label="FLS Lab home">
         <img class="brand-full" src="@/assets/images/figma/fls-logo.png" alt="" />
         <img class="brand-compact" src="@/assets/images/figma/fls-logo.png" alt="" aria-hidden="true" />
