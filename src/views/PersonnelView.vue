@@ -18,7 +18,7 @@
               >
                 +
               </button>
-              <img
+              <img loading="lazy" decoding="async"
                 :src="person.photo"
                 alt="Person"
                 class="mx-auto w-32 h-32 rounded-full mb-4"

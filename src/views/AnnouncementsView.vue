@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-left">
+  <div class="flex flex-col items-left announcements-view">
     <h1 class="mb-8 text-3xl font-black text-white">Announcements</h1>
 
     <div class="tab-content-container w-full">
@@ -70,4 +70,47 @@ const displayedAnnouncements = computed(() =>
 );
 </script>
 
-<style scoped></style>
+<style scoped>
+.announcements-view :deep(.tab-content-container > ul) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0;
+  list-style: none;
+}
+.announcements-view :deep(.tab-content-container > ul > li) {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid #e4ebf1;
+  border-radius: 14px;
+  background: #fff;
+  color: #26364b !important;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.announcements-view :deep(.tab-content-container > ul > li > span:first-child) {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e0f7f4;
+  color: #078da4;
+  font-size: 13px;
+  font-weight: 700;
+}
+.announcements-view :deep(.tab-content-container > button) {
+  color: #fff;
+  background: linear-gradient(105deg, #12b8ad, #14a8d6 48%, #6e5cf0);
+  font-size: 14px;
+}
+@media (max-width: 760px) {
+  .announcements-view :deep(.tab-content-container > ul) {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

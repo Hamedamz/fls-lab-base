@@ -16,7 +16,7 @@
         <p class="text-white text-xl">
           A <a href="https://arxiv.org/abs/2606.22499" target="_blank" class="underline">LightBender</a> is a type of Flying Light Speck, FLS. Its lighting primitive is a servo-actuated rod with a dense, addressable LED strip. It is designed to illuminate mid-air <a href="https://youtu.be/j4nlgD3iAyM" target="_blank" class="underline">line drawing</a> and letterforms. Its software implements algorithms and heuristics to estimate the minimum number of LightBenders required for a given drawing while computing staggered swarm formations that mitigate rotor downwash. The software generates a Swarm Flight and Lighting (SFL) file specifying coordinated flight trajectories and lighting commands. It is embodied in a <a href="https://youtu.be/DhsHoG3VMiQ" target="_blank" class="underline">Blender add-on</a> that launches a swarm of LightBenders with a click of a button to illuminate the line drawing. This add-on supports <a href="https://youtu.be/XbsEkBngdZY" target="_blank" class="underline">visual effects</a> such as fly-in, fly-out, fold, sparkle and others with a click of a button. When equipped with a protective cage, a LightBender provides safe <a href="https://youtu.be/LsTwUVTbn1E" target="_blank" class="underline">bare-hand interaction</a>. One application is <a href="https://youtu.be/_I6qcD0NoYM" target="_blank" class="underline">bidirectional illumination editing</a>, in which a user's direct manipulation of the rendered graphics is detected and synchronized back to the authoring software.
         </p>
-        <img :src="LightBenderIMG" alt="LightBender Image" class="mt-4 w-1/2 mx-auto rounded-lg shadow-lg" />
+        <img loading="lazy" decoding="async" :src="LightBenderIMG" alt="LightBender Image" class="mt-4 w-1/2 mx-auto rounded-lg shadow-lg" />
       </div>
 
       <!-- FLS-Matter and 3D Displays Section -->
@@ -47,7 +47,7 @@
           resemble futuristic systems from sci-fi movies and shows, e.g., Star Trek’s
           Holodeck.
         </p>
-        <img :src="HolodeckIMG" alt="Holodeck Image" class="mt-4 w-1/2 mx-auto rounded-lg shadow-lg" />
+        <img loading="lazy" decoding="async" :src="HolodeckIMG" alt="Holodeck Image" class="mt-4 w-1/2 mx-auto rounded-lg shadow-lg" />
       </div>
 
       <!-- Localization and Communication Section -->

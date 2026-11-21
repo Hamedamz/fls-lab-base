@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-left">
+  <div class="flex flex-col items-left publications-view">
     <h1 class="mb-8 text-3xl font-black text-white">Publications</h1>
 
     <div class="tab-content-container w-full">
@@ -287,4 +287,59 @@ const publications = [
 ];
 </script>
 
-<style scoped></style>
+<style scoped>
+.publications-view :deep(.tab-content-container .grid) {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+.publications-view :deep(.bg-slate-800) {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px 22px;
+  border-radius: 14px;
+}
+.publications-view :deep(.bg-slate-800 > div:first-child > div) {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.publications-view :deep(.bg-slate-800 > div:first-child span:first-child) {
+  display: grid;
+  width: 42px;
+  height: 48px;
+  place-items: center;
+  border-radius: 9px;
+  background: #e0eefc;
+  color: #1187b2 !important;
+}
+.publications-view :deep(.bg-slate-800 > div:first-child span:nth-child(2)) {
+  display: none;
+}
+.publications-view :deep(.bg-slate-800 p) {
+  margin: 0;
+  line-height: 1.55;
+  flex: 1;
+  min-width: 0;
+}
+.publications-view :deep(.bg-slate-800 > div:last-child) {
+  justify-content: flex-start;
+}
+.publications-view :deep(.pdf-link),
+.publications-view :deep(.video-link) {
+  color: #078da4;
+  font-size: 13px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+@media (max-width: 620px) {
+  .publications-view :deep(.bg-slate-800) {
+    padding: 16px;
+    gap: 10px;
+  }
+  .publications-view :deep(.bg-slate-800 > div:first-child span:first-child) {
+    width: 32px;
+    height: 38px;
+  }
+}
+</style>
